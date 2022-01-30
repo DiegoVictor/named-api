@@ -38,18 +38,18 @@ go run main.go
 * `POST /feedbacks`
 
 Request body:
-```json
+```
 [
-	{
-		"name": "Jordan",
-		"value": 1
-	}
+  {
+    "name": "Jordan",
+    "value": 1
+  }
 ]
 ```
 
 * `POST /upload`
 
 Request body:
-```json
+```
 "file"=<file>
 ```
