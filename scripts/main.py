@@ -13,7 +13,14 @@ def generate_name(chain):
 
     while True:
         next_parts = chain[word_part]
-        above_minimum = greater_than(next_parts, WORD_MIN_PERCENT_USAGE)
+
+        percent = WORD_MIN_PERCENT_USAGE
+        while True:
+            above_minimum = greater_than(next_parts, percent)
+            if above_minimum != {}:
+                break
+            percent -= 0.1
+
         word_part = random_from(above_minimum)
 
         last_character = word_part[-1]
