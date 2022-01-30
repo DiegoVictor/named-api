@@ -1,4 +1,4 @@
-module github.com/diegovictor/name-generator
+module github.com/diegovictor/named-api
 
 go 1.17
 

@@ -1,1 +1,1 @@
-web: bin/name-generator
+web: bin/named

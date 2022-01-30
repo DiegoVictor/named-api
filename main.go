@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/diegovictor/name-generator/controllers"
-	"github.com/diegovictor/name-generator/middlewares"
+	"github.com/diegovictor/named-api/controllers"
+	"github.com/diegovictor/named-api/middlewares"
 
 	"github.com/gin-gonic/gin"
 )

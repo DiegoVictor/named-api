@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/diegovictor/name-generator/helpers"
+	"github.com/diegovictor/named-api/helpers"
 
 	"github.com/gin-gonic/gin"
 )

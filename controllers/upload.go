@@ -6,7 +6,7 @@ import (
 	"path"
 	"time"
 
-	"github.com/diegovictor/name-generator/helpers"
+	"github.com/diegovictor/named-api/helpers"
 
 	"github.com/gin-gonic/gin"
 )
