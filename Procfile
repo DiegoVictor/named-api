@@ -1,1 +1,1 @@
-web: bin/named
+web: bin/named-api
