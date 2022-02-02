@@ -1,6 +1,7 @@
 package main
 
 import (
+	"net/http"
 	"os"
 
 	"github.com/diegovictor/named-api/controllers"
@@ -13,6 +14,10 @@ func main() {
 	port := os.Getenv("PORT")
 
 	router := gin.Default()
+
+	router.GET("/", func(c *gin.Context) {
+		c.Data(http.StatusOK, "text/html", []byte("Refer to the documentation: <a href=\"https://github.com/DiegoVictor/named-api\">here</a>."))
+	})
 
 	router.Use(middlewares.Cors())
 	router.GET("/names", controllers.GetNames)
