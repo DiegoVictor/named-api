@@ -14,7 +14,8 @@ func main() {
 
 	router.GET("/names", controllers.GetNames)
 	router.POST("/datasets/:id/feedbacks", controllers.PostFeedback)
-	router.GET("/datasets", controllers.GetDatasets)
+
+	router.StaticFile("/datasets", "./config/datasets.json")
 
 	router.MaxMultipartMemory = 2 << 20
 	router.POST("/upload", controllers.Upload)
