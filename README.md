@@ -15,6 +15,8 @@ Live Demo: https://name-generator-api.herokuapp.com
 * [Usage](#usage)
   * [Routes](#routes)
     * [Requests](#requests)
+* [Running the tests](#running-the-tests)
+  * [Coverage report](#coverage-report)
 
 # Requirements
 * [Go](https://go.dev/)
@@ -57,3 +59,16 @@ Request body:
 ```
 "file"=<file>
 ```
+
+# Running the tests
+To run the projects' tests the app:
+```shell
+$ ./scripts/test.sh
+```
+Or:
+```shell
+$ go test ./tests/... -cover -coverpkg=./controllers,./helpers -coverprofile=coverage-report.out
+```
+
+## Coverage report
+You can see the coverage report on root folder `coverage-report.out`. They are automatically created after the tests run (with you used the command above).
