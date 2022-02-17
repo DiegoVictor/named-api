@@ -19,7 +19,7 @@ jobs:
     - name: Set up Codecov
       uses: codecov/codecov-action@v2
 
-    - name: Run tests script
+    - name: Run tests
       run: |
         go test ./tests/... -race -covermode=atomic -cover \
           -coverpkg=./controllers,./helpers \
