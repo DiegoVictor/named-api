@@ -24,7 +24,7 @@ func TestPostFeedback(t *testing.T) {
 		dataset := fmt.Sprint(helpers.GetRoot(), "/datasets/test.csv")
 
 		os.Remove(dataset)
-		file, _ := os.OpenFile(dataset, os.O_CREATE, 0600)
+		file, _ := os.OpenFile(dataset, os.O_CREATE|os.O_RDWR, 0600)
 		file.WriteString("name")
 		file.Close()
 
