@@ -20,7 +20,10 @@ jobs:
       uses: codecov/codecov-action@v2
 
     - name: Run tests script
-      run: ./scripts/test.sh
+      run: |
+        go test ./tests/... -race -covermode=atomic -cover \
+          -coverpkg=./controllers,./helpers \
+          -coverprofile=coverage.out
 
     - name: Upload coverage report
       run: bash <(curl -s http://codecov.io/bash)
