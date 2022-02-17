@@ -22,7 +22,7 @@ func Upload(c *gin.Context) {
 		err := c.SaveUploadedFile(file, filePath)
 
 		if !helpers.Catch(err, c) {
-			c.JSON(http.StatusOK, gin.H{"id": id})
+			c.IndentedJSON(http.StatusOK, gin.H{"id": id})
 		}
 	}
 }
