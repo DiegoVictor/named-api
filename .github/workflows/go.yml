@@ -21,7 +21,7 @@ jobs:
 
     - name: Run tests
       run: |
-        go test ./tests/... -race -covermode=atomic -cover \
+        go test ./tests/... -cover \
           -coverpkg=./controllers,./helpers \
           -coverprofile=coverage.out
 
