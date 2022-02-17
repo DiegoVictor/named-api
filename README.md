@@ -1,5 +1,7 @@
 # [API] Named
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/DiegoVictor/named-api/Go/main?style=flat-square)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/diegovictor/named-api?style=flat-square)
+[![coverage](https://img.shields.io/codecov/c/gh/DiegoVictor/named-api?logo=codecov&style=flat-square)](https://codecov.io/gh/DiegoVictor/named-api)
 [![MIT License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://raw.githubusercontent.com/DiegoVictor/named-api/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)<br>
 [![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Named&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDiegoVictor%2Fnamed-api%2Fmain%2FInsomnia_2022-01-30.json)
