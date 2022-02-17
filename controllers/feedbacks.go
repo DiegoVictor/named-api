@@ -22,7 +22,8 @@ type Params struct {
 func PostFeedback(c *gin.Context) {
 	var names []Names
 
-	if c.ShouldBind(&names) == nil {
+	err := c.ShouldBind(&names)
+	if !helpers.Catch(err, c) {
 		var params Params
 
 		err := c.ShouldBindUri(&params)
