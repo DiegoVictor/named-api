@@ -2,10 +2,10 @@ package controllers
 
 import (
 	"net/http"
-	"os"
 	"strings"
 
 	"github.com/diegovictor/named-api/helpers"
+	"github.com/diegovictor/named-api/services"
 
 	"github.com/gin-gonic/gin"
 )
@@ -19,6 +19,11 @@ type Params struct {
 	Id string `uri:"id" binding:"required"`
 }
 
+var (
+	Append = services.File{}.Append
+	Open   = services.File{}.Open
+)
+
 func PostFeedback(c *gin.Context) {
 	var names []Names
 
@@ -31,7 +36,7 @@ func PostFeedback(c *gin.Context) {
 			return
 		}
 
-		file, err := os.OpenFile("datasets/"+params.Id+".csv", os.O_APPEND|os.O_WRONLY, 0600)
+		file, err := Open(helpers.GetRoot() + "/datasets/" + params.Id + ".csv")
 		if helpers.Catch(err, c) {
 			return
 		}
@@ -39,7 +44,7 @@ func PostFeedback(c *gin.Context) {
 
 		for _, item := range names {
 			if item.Value == 1 {
-				_, err := file.WriteString("\n" + strings.Title(item.Name))
+				_, err := Append(file, strings.Title(item.Name))
 				if helpers.Catch(err, c) {
 					return
 				}
