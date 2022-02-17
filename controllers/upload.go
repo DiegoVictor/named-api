@@ -17,7 +17,7 @@ func Upload(c *gin.Context) {
 	if !helpers.Catch(err, c) {
 		id := time.Now().Unix()
 		filename := fmt.Sprint(id)
-		filePath := path.Join("./datasets", filename+".csv")
+		filePath := path.Join(helpers.GetRoot()+"/datasets", filename+".csv")
 
 		err := c.SaveUploadedFile(file, filePath)
 
