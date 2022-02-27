@@ -4,7 +4,7 @@
 [![coverage](https://img.shields.io/codecov/c/gh/DiegoVictor/named-api?logo=codecov&style=flat-square)](https://codecov.io/gh/DiegoVictor/named-api)
 [![MIT License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://raw.githubusercontent.com/DiegoVictor/named-api/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)<br>
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Named&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDiegoVictor%2Fnamed-api%2Fmain%2FInsomnia_2022-02-23.json)
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Named&uri=https%3A%2F%2Fraw.githubusercontent.com%2FDiegoVictor%2Fnamed-api%2Fmain%2FInsomnia_2022-02-27.json)
 
 Responsible for provide data to the [web](https://github.com/DiegoVictor/named-web) front-end. Generates names based on preseted datasets (list of example names), but you can upload a custom dataset (it must have at least 23 names). Was utilized the Markov Chain algorithm to generate the names, a custom script was created based on this article: [Generating Startup names with Markov Chains](https://towardsdatascience.com/generating-startup-names-with-markov-chains-2a33030a4ac0).
 
