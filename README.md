@@ -30,6 +30,10 @@ Or:
 ```
 go run main.go
 ```
+Or even:
+```shell
+$ ./scripts/run.sh
+```
 
 ## Routes
 |route|HTTP Method|params|description
