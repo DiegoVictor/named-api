@@ -16,7 +16,7 @@ var Command = services.Cli{}.Run
 func GetNames(c *gin.Context) {
 	dataset := c.Query("dataset")
 
-	params := []string{helpers.GetRoot() + "/lib/main.py", dataset}
+	params := []string{"./lib/main.py", dataset}
 	out, err := Command("python", params...)
 
 	if !helpers.Catch(err, c) {
