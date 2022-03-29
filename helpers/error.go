@@ -9,7 +9,7 @@ import (
 
 func Catch(err error, c *gin.Context) bool {
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println(err.Error())
 		c.IndentedJSON(http.StatusInternalServerError, gin.H{"message": "Ops! Something goes wrong, try again"})
 
 		return true
