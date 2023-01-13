@@ -1,5 +1,5 @@
 # [API] Named
-![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/DiegoVictor/named-api/go.yml?style=flat-square)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/DiegoVictor/named-api/go.yml?style=flat-square&logo=github)](https://github.com/DiegoVictor/named-api/actions)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/diegovictor/named-api?style=flat-square)
 [![coverage](https://img.shields.io/codecov/c/gh/DiegoVictor/named-api?logo=codecov&style=flat-square)](https://codecov.io/gh/DiegoVictor/named-api)
 [![MIT License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://raw.githubusercontent.com/DiegoVictor/named-api/main/LICENSE)
