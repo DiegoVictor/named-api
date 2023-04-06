@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: named-api
+    env: docker
+    envVars:
+      - key: GIN_MODE
+        value: release
