@@ -19,7 +19,7 @@ jobs:
     - name: Set up Codecov
       uses: codecov/codecov-action@v4
       with:
-        token: ${{ secret.CODECOV_TOKEN }}
+        token: ${{ secrets.CODECOV_TOKEN }}
 
     - name: Run tests
       run: |
