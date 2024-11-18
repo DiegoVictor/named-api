@@ -16,16 +16,13 @@ jobs:
       with:
         go-version: 1.17
 
-    - name: Set up Codecov
-      uses: codecov/codecov-action@v4
-      env:
-        token: ${{ secrets.CODECOV_TOKEN }}
-
     - name: Run tests
       run: |
         go test ./tests/... -cover \
           -coverpkg=./controllers,./helpers \
           -coverprofile=coverage.out
 
-    - name: Upload coverage report
-      run: bash <(curl -s http://codecov.io/bash)
+    - name: Set up Codecov
+      uses: codecov/codecov-action@v4
+      env:
+        token: ${{ secrets.CODECOV_TOKEN }}
