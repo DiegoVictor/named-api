@@ -20,7 +20,8 @@ jobs:
       run: |
         go test ./tests/... -cover \
           -coverpkg=./controllers,./helpers \
-          -coverprofile=coverage.out
+          -covermode=atomic \
+          -coverprofile=coverage.txt
 
     - name: Set up Codecov
       uses: codecov/codecov-action@v4
